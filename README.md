@@ -4,10 +4,11 @@ ScrollLabel
 如果这个UIViewController是应用的首页最好在
 - (void)applicationWillEnterForeground:(UIApplication *)application 方法中再次激活滚动功能，调用scroll方法
 以下是使用方法：
+    
 
-ScrollLabel *sl = [[ScrollLabel alloc]initWithFrame:CGRectMake(20, 60, 200, 30)];
+    ScrollLabel *sl = [[ScrollLabel alloc]initWithFrame:CGRectMake(20, 60, 200, 30)];
     sl.backgroundColor = [UIColor yellowColor];
-    sl.text = @"一地在要工上是中国同和的有人我主产为为这民了发以经！一地在要工上是中国同和的有人我主产为为这民了发以经！！一地在要工上是中国同和的有人我主产为为这民了发以经！！！";
+    sl.text = @"一地在要工上是中国同和的有人我主产为为这民了发以经！";
     
     sl.font = [UIFont systemFontOfSize:12];
     sl.textColor = [UIColor blackColor];
@@ -20,7 +21,7 @@ ScrollLabel *sl = [[ScrollLabel alloc]initWithFrame:CGRectMake(20, 60, 200, 30)]
     ScrollLabel *sl2 = [[ScrollLabel alloc]initWithFrame:CGRectMake(0, 120, 320, 30)];
     sl2.backgroundColor = [UIColor yellowColor];
     sl2.duration = 10;
-    sl2.text = @"一地在要工上是中国同和的有人我主产为为这民了发以经！一地在要工上是中国同和的有人我主产为为这民了发以经！！一地在要工上是中国同和的有人我主产为为这民了发以经！！！";
+    sl2.text = @"一地在要工上是中国同和的有人我主产为为这民了发以经！";
     [self.view addSubview:sl2];
     
     [sl2 start];
